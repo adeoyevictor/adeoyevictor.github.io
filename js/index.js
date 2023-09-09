@@ -24,7 +24,7 @@ gsap.from(".service", {
     trigger: ".service",
     toggleActions: "restart pause resume pause",
     // start: "top center",
-    end: "bottom 100px",
+    // end: "bottom 100px",
   },
   //   repeat: 1
 });
@@ -39,7 +39,7 @@ gsap.from(".portfolio .portfolio__item", {
     trigger: ".portfolio .portfolio__item",
     toggleActions: "restart pause resume pause",
     // start: "top center",
-    end: "bottom 100px",
+    // end: "bottom 100px",
   },
   //   repeat: 3
 });
