@@ -22,12 +22,10 @@ gsap.from(".service", {
   scale: 0.3,
   scrollTrigger: {
     trigger: ".service",
-    toggleActions: "restart pause resume pause",
-    // start: "top center",
-    // end: "bottom 100px",
+    toggleActions: "play pause resume pause",
   },
-  //   repeat: 1
 });
+
 gsap.from(".portfolio .portfolio__item", {
   duration: 1.5,
   opacity: 0,
@@ -37,9 +35,9 @@ gsap.from(".portfolio .portfolio__item", {
   ease: "back",
   scrollTrigger: {
     trigger: ".portfolio .portfolio__item",
-    toggleActions: "restart pause resume pause",
-    // start: "top center",
-    // end: "bottom 100px",
+    toggleActions: "play pause resume pause",
   },
-  //   repeat: 3
 });
+// play pause resume reverse restart reset complete none
+// 1 enter screen
+// 2 when it goes forward past endpoint

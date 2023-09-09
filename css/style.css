@@ -347,10 +347,10 @@ header {
 }
 
 @media (min-width: 800px) {
-  .services {
+  /* .services { */
     /* display: flex; */
     /* max-width: 1000px; */
-  }
+  /* } */
 
   .service + .service {
     margin-left: 2em;
