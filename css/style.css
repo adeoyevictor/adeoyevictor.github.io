@@ -307,6 +307,7 @@ header {
 .section__title--services {
   color: var(--clr-accent);
   position: relative;
+  font-size: var(--fs-h4);
 }
 
 .section__title--services::after {
@@ -471,4 +472,8 @@ header {
   max-width: 600px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.section__title--work {
+  font-size: var(--fs-h4);
 }
