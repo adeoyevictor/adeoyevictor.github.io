@@ -21,6 +21,7 @@
   --fs-h2: 2.25rem;
   --fs-h3: 1.25rem;
   --fs-h4: 2rem;
+  --fs-h5: 1.5rem;
   --fs-body: 1rem;
 
   --bs: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.25),
@@ -148,8 +149,10 @@ header {
   padding: 1em;
 }
 
-.logo {
-  max-width: 100px;
+.logo i {
+  /* max-width: 150px; */
+  color: var(--clr-accent);
+  font-size: var(--fs-h5);
 }
 
 .nav {
@@ -297,9 +300,6 @@ header {
 
 .my-services {
   background-color: var(--clr-dark);
-  /* background-image: url(../img/services-bg.jpg); */
-  /* background-size: cover; */
-  /* background-blend-mode: multiply; */
   color: var(--clr-light);
   text-align: center;
 }
@@ -320,41 +320,25 @@ header {
 }
 
 .services {
-  margin-bottom: 4em;
-  /* overflow-x: hidden; */
+  margin-bottom: 2em;
   display: flex;
-  margin-left: auto;
-  margin-right: auto;
+  align-items: center;
+  justify-content: center;
   flex-wrap: wrap;
-  /* -ms-overflow-style: none; */
-  /* scrollbar-width: none; */
 }
-/* .services::-webkit-scrollbar { */
-  /* display: none; */
-/* } */
 
 .service {
-  min-width: 150px;
-  /* margin: 0 auto; */
+  /* width: 150px; */
+  padding: 32px;
 }
 .service p {
   color: var(--clr-accent);
   font-size: var(--fs-h1);
+  margin-top: 36px;
+  margin-bottom: 36px;
 }
 .service h3 {
-  /* font-size: var(--fs-h4); */
-  font-weight: 600;
-}
-
-@media (min-width: 800px) {
-  /* .services { */
-    /* display: flex; */
-    /* max-width: 1000px; */
-  /* } */
-
-  .service + .service {
-    margin-left: 2em;
-  }
+  font-weight: 500;
 }
 
 .about-me {

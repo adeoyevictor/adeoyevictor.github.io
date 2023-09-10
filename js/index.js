@@ -13,31 +13,32 @@ navLinks.forEach((link) => {
 
 gsap.registerPlugin(ScrollTrigger);
 
-gsap.from(".service", {
-  duration: 1.5,
+gsap.from(".services .service", {
+  duration: 1,
   opacity: 0,
-  y: "random(-400, 400)",
+  y: "random(-200, 200)",
   stagger: 0.25,
   ease: "back",
   scale: 0.3,
   scrollTrigger: {
-    trigger: ".service",
+    trigger: ".services",
     toggleActions: "play pause resume pause",
   },
 });
 
 gsap.from(".portfolio .portfolio__item", {
-  duration: 1.5,
+  duration: 1,
   opacity: 0,
-  y: "random(-400, 400)",
+  y: "random(-200, 200)",
   stagger: 0.25,
   scale: 0.3,
   ease: "back",
   scrollTrigger: {
-    trigger: ".portfolio .portfolio__item",
-    toggleActions: "play pause resume pause",
+    trigger: ".portfolio",
+    toggleActions: "play pause restart pause",
   },
 });
+
 // play pause resume reverse restart reset complete none
 // 1 enter screen
 // 2 when it goes forward past endpoint
