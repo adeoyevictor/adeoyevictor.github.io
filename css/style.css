@@ -329,7 +329,7 @@ header {
 }
 
 .service {
-  /* width: 150px; */
+  width: 125px;
   padding: 32px;
 }
 .service p {

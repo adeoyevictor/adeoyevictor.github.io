@@ -64,8 +64,8 @@ gsap.from(".section__title--about", {
 
 gsap.from(".section__subtitle--intro", {
   duration: 2,
-  y: -300,
-  ease: "bounce",
+  x: -300,
+  ease: "back",
   scrollTrigger: {
     trigger: ".section__subtitle--intro",
     toggleActions: "play pause restart restart",
@@ -82,28 +82,42 @@ gsap.from(".section__subtitle--about", {
   },
 });
 
-gsap.set(".intro__img", {
-  transformOrigin: "50% 50%",
-});
+// 
 
-gsap.to(".intro__img", {
+gsap.from(".intro__img", {
   duration: 2,
-  rotation: 360,
+  transform: "scale(0.5)",
   scrollTrigger: {
     trigger: ".intro__img",
     toggleActions: "play pause restart restart",
   },
 });
 
-gsap.set(".about-me__img", {
-  transformOrigin: "50% 50%",
-});
-
-gsap.to(".about-me__img", {
+gsap.to(".intro__img", {
   duration: 2,
-  rotation: 360,
+  transform: "scale(1)",
+  scrollTrigger: {
+    trigger: ".intro__img",
+    toggleActions: "play pause restart restart",
+  },
+});
+// 
+gsap.from(".about-me__img", {
+  duration: 2,
+  transform: "scale(0.5)",
   scrollTrigger: {
     trigger: ".about-me__img",
     toggleActions: "play pause restart restart",
   },
 });
+
+gsap.to(".about-me__img", {
+  duration: 2,
+  transform: "scale(1)",
+  scrollTrigger: {
+    trigger: ".about-me__img",
+    toggleActions: "play pause restart restart",
+  },
+});
+
+
