@@ -22,7 +22,7 @@ gsap.from(".services .service", {
   scale: 0.3,
   scrollTrigger: {
     trigger: ".services",
-    toggleActions: "play pause restart restart",
+    toggleActions: "play pause restart pause",
   },
 });
 
@@ -68,6 +68,16 @@ gsap.from(".section__subtitle--intro", {
   ease: "bounce",
   scrollTrigger: {
     trigger: ".section__subtitle--intro",
+    toggleActions: "play pause restart restart",
+  },
+});
+
+gsap.from(".section__subtitle--about", {
+  duration: 2,
+  y: 300,
+  ease: "bounce",
+  scrollTrigger: {
+    trigger: ".section__subtitle--about",
     toggleActions: "play pause restart restart",
   },
 });
