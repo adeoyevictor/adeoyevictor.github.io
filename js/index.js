@@ -22,7 +22,7 @@ gsap.from(".services .service", {
   scale: 0.3,
   scrollTrigger: {
     trigger: ".services",
-    toggleActions: "play pause restart pause",
+    toggleActions: "play pause resume pause",
   },
 });
 
